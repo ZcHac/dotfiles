@@ -1,0 +1,18 @@
+[user]
+	name = ZcHac Keeler
+	email = 74961353+ZcHac@users.noreply.github.com
+[credential]
+	helper = cache --timeout=3600\n
+[core]
+	autocrlf = input
+	editor = nvim
+[http]
+	sslVerify = false
+# Hint of using mergetool:	:Gw! in any of the opened window ---> committed and marked as a merge resolution
+#							(d2o or d3o) in central window ---> pull changes from local or remote file
+[mergetool "fugitive"]
+	cmd = nvim -f -c \"Gvdiffsplit!\" \"$MERGED\"
+[merge]
+	tool = fugitive
+[mergetool]
+	prompt = false
