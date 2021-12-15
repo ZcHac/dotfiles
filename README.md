@@ -9,7 +9,7 @@ Currently included utilities:
 
 - Command Line Shell:
   - bash
-  - zsh
+  - zsh (plugin manager: oh-my-zsh)
 
 - Terminal:
   - alacritty
@@ -18,7 +18,7 @@ Currently included utilities:
   - tmux
 
 - Text editor:
-  - nvim
+  - nvim (plugin manager: vim-plug)
 
 - Repository:
   - git
@@ -26,11 +26,16 @@ Currently included utilities:
 - Font:
   - NerdFont
 
+- Password Manager:
+  - pass
+
 ## TODOs
 
 - [] Configure Ranger for command line file manger
   - [] Configure xdg utilities
 
 - [] Configure DWM for tiling window manager
+
+- [] Configure dmenu (pass menu etc..)
 
 - [] Finish up remaining auto installing script, i.e. install.sh

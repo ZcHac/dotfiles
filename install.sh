@@ -32,6 +32,12 @@ function setup_symlinks() {
     ln -sf $DOTFILES/.gitconfig $HOME/.gitconfig
     ln -sf $DOTFILES/.tmux.conf $HOME/.tmux.conf
 
+    # oh-my-zsh customization
+    ln -sf $DOTFILES/.oh-my-zsh/custom/plugins/zsh-autosuggestions $HOME/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    ln -sf $DOTFILES/.oh-my-zsh/custom/plugins/zsh-syntax-highlighing $HOME/.oh-my-zsh/custom/plugins/zsh-syntax-hightlighting
+    ln -sf $DOTFILES/.oh-my-zsh/custom/themes/gruvbox-dark.zsh-theme $HOME/.oh-my-zsh/custom/themes/gruvbox-dark.zsh-theme
+    ln -sf $DOTFILES/.oh-my-zsh/custom/themes/powerline.zsh-theme $HOME/.oh-my-zsh/custom/themes/powerline.zsh-theme
+
     # Config directory
     [ ! -d $HOME/.config ] && mkdir $HOME/.config
 
@@ -51,6 +57,7 @@ function setup_symlinks() {
     [ ! -d $HOME/.local/share ] && mkdir $HOME/.local/share
     [ -d $HOME/.local/share/fonts ] && rm -rf $HOME/.local/share/fonts
     ln -sf $DOTFILES/.local/share/fonts $HOME/.local/share/fonts
+
 }
 
 case "$1" in
