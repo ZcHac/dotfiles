@@ -319,8 +319,10 @@ call plug#begin('~/.config/nvim/plugged')
     endif
 
     nmap <silent> <leader>b :Buffers<cr>
-    nmap <silent> <leader>z :FZF<cr>
     nmap <silent> <leader>p :Snippets<cr>
+
+    " Search from $HOME directory
+    nmap <silent> <leader>z :FZF ~<cr>
 
     " Check mappings
     nmap <leader><tab> <plug>(fzf-maps-n)
