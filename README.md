@@ -31,7 +31,7 @@ Currently included utilities:
 
 ## TODOs
 
-- [] Configure Ranger for command line file manger
+- [] Configure Lf for command line file manger
   - [] Configure xdg utilities
 
 - [] Configure DWM for tiling window manager
